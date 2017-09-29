@@ -1,0 +1,22 @@
+{
+    "package": {
+        "name": "ceylon-distribution",
+        "repo": "ci",
+        "subject": "bjansen"
+    },
+
+    "version": {
+        "name": "1.3.4-SNAPSHOT",
+        "desc": "1.3.4-SNAPSHOT",
+        "released": "2017-09-29",
+        "vcs_tag": "1.3.4-SNAPSHOT",
+        "attributes": [],
+        "gpgSign": false
+    },
+
+    "files":
+        [
+        {"includePattern": "ceylon-dist.zip", "uploadPattern": "$1"}
+        ],
+    "publish": true
+}

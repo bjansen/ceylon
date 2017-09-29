@@ -1,6 +1,16 @@
+language: java
 jdk:
   - openjdk7
-  
-language: java
+
 install: ant clean dist
-script: true
+script:
+  -
+
+before_deploy: "zip -r ceylon-dist.zip dist/dist/*"
+
+deploy:
+  provider: bintray
+  file: ".travis-deploy.json"
+  user: "bjansen"
+  key:
+    secure: G3pAUcBAEh9SbeYcpPhsJtyK7F7OAHMmw7ngHuGchYw83FV549+9kzzQoIIsyrYEpqyJcrBIyqxuwgfiXZIDUzA2J0CNBOPRYBAxi5ASaMmee14TvGvzUf4aihIEASqrhwePLctbJ17iWO6PcrgXwgBqSQR/9P1m7vevfzq/rpoqBxKBANIJWq7bKiuDckJtboDOrZR4XzsgU03YpZJgdZ5WuP9lbZad+qvNXq6jqix0+UdR2oZaKA6ZRZ/xBZfyWoeNyd7KS9qPJJ675bFdV60jrsIJQjo0RhwunWwlgj5PP8WGwRsZ2et1k/7fJNO0wh8judcYw5HtcCJsVzt3lZWuU+ehh3XSMRWqUJzkF8sk4vlfBCPCdfpLKeSi9WxIdNaeHXO4eyua21yzFedl2psl4Wf4D0zJmVZ2ut6ndukBryHhvHIJebspqo4YxqxSktmBT4oOdVAWQU/GijIic8jaJoaiDG/iQGZ+u9kKrETYAENejL4PQSR+cdBdglUTR6wW8m+nndiFwh9AQLNGPoPgnG2nHsoNmveE34oy7zHU6eDwV45ZhNwCe7F9U+QpadL5cUmfF/NT9MNEPvKIAhI3DTIHb/aax92ZMIWhwkLwxZ9GhPj1HtI/xafIHZSe7d8Y3USp65RIXQeQ0nhDNjDDMzKkjqhZJCF7ndQiIy8=
