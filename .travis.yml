@@ -2,4 +2,5 @@ jdk:
   - openjdk7
   
 language: java
-script: ant clean dist
+install: ant clean dist
+script: true
