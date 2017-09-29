@@ -1,0 +1,5 @@
+jdk:
+  - openjdk7
+  
+language: java
+install: ant clean dist
