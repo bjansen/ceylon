@@ -2,7 +2,7 @@ language: java
 jdk:
   - openjdk7
 
-install: ant clean dist
+install: ant clean clean-packages nightly ide-quick
 script:
   -
 
