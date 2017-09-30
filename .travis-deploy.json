@@ -21,7 +21,7 @@
             "matrixParams": { "override": 1 }
         },
         {
-            "includePattern": "dist/required-bundle-proxies.zip)", 
+            "includePattern": "dist/(required-bundle-proxies\\.zip)", 
             "uploadPattern": "required-bundle-proxies.zip",
             "matrixParams": { "override": 1 }
         }
