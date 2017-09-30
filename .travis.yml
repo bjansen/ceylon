@@ -2,11 +2,9 @@ language: java
 jdk:
   - openjdk7
 
-install: ant clean clean-packages nightly ide-quick
+install: ant -f dist/build.xml clean clean-packages nightly ide-quick
 script:
   -
-
-before_deploy: "zip -r ceylon-dist.zip dist/dist/*"
 
 deploy:
   provider: bintray
