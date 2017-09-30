@@ -14,12 +14,9 @@
         "gpgSign": false
     },
 
-    "files":
-        [
-        {"includePattern": "dist/(ceylon-.*\\.zip)", "uploadPattern": "ceylon-distribution.zip"},
-		{
-            "matrixParams": { "override": 1 }
-    	}
-        ],
+    "files": [
+        {"includePattern": "dist/(ceylon.*\\.zip)", "uploadPattern": "ceylon-distribution.zip"},
+		{"matrixParams": { "override": 1 }}
+    ],
     "publish": true
 }
