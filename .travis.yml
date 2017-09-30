@@ -2,11 +2,7 @@ language: java
 jdk:
   - openjdk7
 
-install: 
-  - touch /home/travis/build/bjansen/ceylon/dist/ceylon-1.3.4-SNAPSHOT-2519896b-201709300950.zip
-  - mkdir -p /home/travis/build/bjansen/ceylon-ide-eclipse/required-bundle-proxies/
-  - touch /home/travis/build/bjansen/ceylon-ide-eclipse/required-bundle-proxies/ceylon-1.3.4-SNAPSHOT-2519896b-201709300950.zip
-#install: ant -f dist/build.xml clean clean-packages nightly ide-quick
+install: ant -f dist/build.xml clean clean-packages nightly ide-quick
 script:
   -
 
