@@ -19,6 +19,11 @@
             "includePattern": "dist/(ceylon-.*\\.zip)", 
             "uploadPattern": "ceylon-distribution.zip",
             "matrixParams": { "override": 1 }
+        },
+        {
+            "includePattern": "dist/required-bundle-proxies.zip)", 
+            "uploadPattern": "required-bundle-proxies.zip",
+            "matrixParams": { "override": 1 }
         }
     ],
     "publish": true
