@@ -16,7 +16,7 @@
 
     "files":
         [
-        {"includePattern": "dist/ceylon-.*.zip", "uploadPattern": "ceylon-distribution.zip"},
+        {"includePattern": "dist/ceylon\\-.*\\.zip", "uploadPattern": "ceylon-distribution.zip"},
 		{
             "matrixParams": { "override": 1 }
     	}
